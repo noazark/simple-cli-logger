@@ -1,10 +1,14 @@
 var logger = require('../')
 
+logger.quiet(false)
+logger.verbose(false)
+
 logger.info('hello world')                           // hello world
 logger.warn('you are super cool')                    // warn: you are super cool
 logger.error('boom')                                 // error: boom
 logger.debug('shh, don\'t tell anyone I said that')  //
 
+logger.verbose(true)
 logger.verbose(true)
 logger.debug('well that was fun')                    // debug: well that was fun
 

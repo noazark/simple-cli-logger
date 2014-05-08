@@ -47,6 +47,7 @@ logger.quiet = function (enabled) {
 	if (enabled) {
 		_destroyBaseListeners()
 	} else {
+		_destroyBaseListeners()
 		_createBaseListeners()
 	}
 
@@ -58,6 +59,7 @@ logger.verbose = function (enabled) {
 	_verboseEnabled = enabled
 
 	if (_verboseEnabled) {
+		logger.removeListener('debug', _handleDebug)
 		logger.on('debug', _handleDebug)
 	} else {
 		logger.removeListener('debug', _handleDebug)
