@@ -10,5 +10,5 @@
     "url" : "https://github.com/noazark/simple-cli-logger.git"
   },
   "license": "MIT",
-  "keywords": ['logger', 'logging', 'cli', 'tty', 'events']
+  "keywords": ["logger", "logging", "cli", "tty", "events"]
 }
