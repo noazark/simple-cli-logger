@@ -1,0 +1,14 @@
+{
+  "name": "simple-cli-logger",
+  "version": "0.1.0",
+  "description": "An event based logger for CLI applications",
+  "main": "index.js",
+  "author": "Noah H. Smith",
+  "homepage" : "https://github.com/noazark/simple-cli-logger",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/noazark/simple-cli-logger.git"
+  },
+  "license": "MIT",
+  "keywords": ['logger', 'logging', 'cli', 'tty', 'events']
+}
