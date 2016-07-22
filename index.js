@@ -6,7 +6,7 @@ var _handleDebug = console.log.bind(console, 'debug:')
 var _handleInfo = console.log.bind(console)
 var _handleWarn = console.warn.bind(console, 'warn:')
 var _handleError = function (err) {
-	if (_verboseEnabled) {
+	if (_verboseEnabled && err.stack) {
 		console.error(err.stack)
 	} else if (err.hasOwnProperty('message')) {
 		console.error('fatal:', err.message.toString())
